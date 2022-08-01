@@ -4,7 +4,15 @@
 REM = tamaño de letra de elemento raiz
 EM = tamaño de fuente del elemento padre
 */
-
+/* colores */
+:root{
+    --principal:#C7231B;
+    --botones:#D9534F;
+    --letras:#373A3C;
+    --barras:#EBEBEB;
+    --letras:#EDEDED;
+    --succesful:#EDEDED;
+}
 
 *{
     margin: 0;
