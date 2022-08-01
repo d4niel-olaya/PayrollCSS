@@ -15,18 +15,4 @@ EM = tamaño de fuente del elemento padre
 body{
     background-color: white;
 }
-.container-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.container-menu{
-    position: sticky;
-}
-
-.content-menu{
-    font-size: 1.2rem;
-}
-
 
