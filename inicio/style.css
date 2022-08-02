@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
 /*
 
 REM = tamaño de letra de elemento raiz
@@ -18,9 +18,47 @@ EM = tamaño de fuente del elemento padre
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
     background-color: white;
+    font-family: 'Jost', sans-serif;
 }
 
+.tb-item{
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.itm-pay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon{
+    object-fit: scale-down;
+}
+
+
+input[type=text], [type=search]{
+    background-color:var(--barras);
+
+}
+button{
+    background-color: var(--botones);
+    color: var(--letras);
+}
+
+.btn-item{
+    border-radius: 5px;
+}
