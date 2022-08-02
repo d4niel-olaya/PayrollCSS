@@ -5,6 +5,9 @@ REM = tamaño de letra de elemento raiz
 EM = tamaño de fuente del elemento padre
 */
 /* colores */
+html{
+    font-size: 16px;
+}
 :root{
     --principal:#C7231B;
     --botones:#D9534F;
@@ -32,19 +35,32 @@ body{
 .tb-item{
     display:flex;
     flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin:1rem;
+    justify-content: space-between;
     /* justify-content: center; */
 }
-
+.container-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .itm-pay{
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    margin:1rem
 }
 
 .search{
     display: flex;
     flex-wrap: wrap;
 }
-
+.search input{
+    width: 15rem;
+    height: 2rem;
+}
 .icon{
     object-fit: scale-down;
 }
@@ -52,13 +68,42 @@ body{
 
 input[type=text], [type=search]{
     background-color:var(--barras);
-
+    font-family: 'Jost',sans-serif;
+    /* height: 2rem; */
+    padding: 0.5rem;
 }
 button{
     background-color: var(--botones);
+    font-family: 'Jost', sans-serif;
     color: var(--letras);
+    height: 2rem;
+    padding: 0.5rem;
 }
 
 .btn-item{
-    border-radius: 5px;
+    border-radius: calc(1rem / 2);
 }
+
+.container-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 1.2rem;
+}
+.container-pay{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+    padding:1.2rem;
+}
+a{
+    display: inline-block;
+}
+/* .icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+} */
