@@ -63,6 +63,8 @@ body{
 }
 .icon{
     object-fit: scale-down;
+    height: 3rem;
+    width: 3rem;
 }
 
 
@@ -101,6 +103,18 @@ button{
 a{
     display: inline-block;
 }
+
+.menu-items{
+    background-color:var(--barras);
+    position: absolute;
+    transform: translate(-100px);
+    transition: all 1s ease;
+}
+
+.off{
+    transform: translate(0px);
+} 
+
 /* .icons{
     display: flex;
     flex-wrap: wrap;

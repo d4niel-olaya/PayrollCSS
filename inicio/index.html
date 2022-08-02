@@ -20,6 +20,14 @@
                 <button>Buscar</button>
             </div>
         </div>
+        <div class="menu-items">
+            <ul>
+                <li>Inicio</li>
+                <li>Empleados</li>
+                <li>Ajustes</li>
+                <li>Salir</li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="container-main">
@@ -64,6 +72,17 @@
         <p>&copy Copyright Coex 2022</p>
     </footer>
     <script>
+        const lista = document.querySelector('.menu-items');
+        const icon = document.querySelector('.icon');
+        icon.addEventListener('click', () =>{
+            if(lista.classList.contains('off')){
+                lista.classList.remove('off');
+            }
+            else{
+                lista.classList.add('off');
+            }
+            // lista.classList.remove('off');
+        })
     </script>
 </body>
 </html>
